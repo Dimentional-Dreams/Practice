@@ -1,0 +1,75 @@
+Name = "Aritra"
+print (Name)
+Price = "255 rs"
+print (Price)
+local get_age = 22
+Mobile_number = "9134214022"
+print(Mobile_number)
+get_age = get_age + 5
+print (get_age)
+
+local credit = [[Story writer
+Producer
+Co-Producer
+Animator
+Marketing Team :- ]] .. "Darktone Studios".. "."
+print (credit)
+-- This is single line comment.
+--[[this is 
+multi Line
+comment.]]
+local pc = {"monitor","cpu case", "hard disk", "ram"}
+local components = type(pc)
+print(pc[3])
+-- we can use # for counting and printing the lemgth of a string or a table.
+-- Example --> print(#container name)
+--[[we can add key value type in a container or table.
+ex -> local pc ={screen= "monitor", cpu = "cpu case, Hard disk, Ram"}]]
+--print(pc.Screen)
+local pc = {screen = "monitor",cpu = "cpu case", storage ="hard disk", "ram"}
+local components = type(pc)
+print(pc.screen)
+print(string.sub(Name, 2, 4))
+--to use sub-string we have to use (string.sub) and then specify which number thing i want to deselect from list.
+print(string.sub(Name, 2))
+print(string.find(Name, "Aritra")) --we can use (string.find)to find the details of any string.
+--[[we can add multiple values in multiple strings in a same line.]]
+--example :-
+local first_char, last_char = string.find(Name, "Aritra")
+local results =[[name starts at ]].. first_char .. " " .. [[and ends at ]] .. last_char .."."
+print(results)
+--we can use child block like this -->
+do
+    local name = "Ari"
+    print(name)
+end
+print(Name)
+--but for that we have to always declare local variable, it won't works on global variables.
+
+--[[functions :- ]]
+
+function something()
+   print("Welcome") 
+end    -- we have to use "close" tag to use function block.
+
+--we have to call the function seperately after declaring it.
+
+something()  --[[we called here the fuction by its name to do specific thing
+which is assign to it.]]
+
+function something(first_name)
+    print("Welcome".." " ..  first_name)
+end
+something("Animator")  -->   Here [something()] works as a placeholder, where we can fill data to complete the functions properly.
+
+--> we can trigger two funtions at a time. Here's how...
+
+function Your_age()
+    print("you are just 17")
+end
+function Something(first_name)
+    print("weclome " .. first_name)
+ Your_age()
+end
+
+Something("Ari")
