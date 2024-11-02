@@ -72,4 +72,5 @@ function Something(first_name)
  Your_age()
 end
 
-Something("Ari")
+Something("Ari")  --> all error occured here in output.
+
